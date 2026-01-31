@@ -42,14 +42,6 @@ The platform evaluates financial health, identifies risks, assesses credit readi
 
 ---
 
-## How to Run Locally
-```bash
-pip install -r requirements.txt
-python -m uvicorn main:app --port 8001
-
-```bash
-
----
 ## Project Description
 AI-Powered Financial Health Assessment Platform for SMEs
 
@@ -61,5 +53,13 @@ evaluate financial health, identify risks, assess credit readiness, and
 generate actionable insights. The system calculates key financial metrics
 such as cash flow, liquidity, and debt ratios, and presents results through
 a clean, easy-to-use web interface designed for non-finance business owners.
+
 ---
+
+
+## How to Run Locally
+```bash
+pip install -r requirements.txt
+python -m uvicorn main:app --port 8001
+
 
