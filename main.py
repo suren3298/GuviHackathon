@@ -115,7 +115,12 @@ def home():
 
 @app.get("/analyze")
 def analyze():
-    df = pd.read_csv("data/sme_financials.csv")
+    import os
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    DATA_PATH = os.path.join(BASE_DIR, "data", "sme_financials.csv")
+
+    df = pd.read_csv(DATA_PATH)
 
     metrics = calculate_financial_metrics(df)
     risk = calculate_risk(metrics)
@@ -126,3 +131,4 @@ def analyze():
         "risk_analysis": risk,
         "ai_insights": insights
     }
+
