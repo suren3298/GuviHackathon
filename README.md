@@ -46,3 +46,18 @@ The platform evaluates financial health, identifies risks, assesses credit readi
 ```bash
 pip install -r requirements.txt
 python -m uvicorn main:app --port 8001
+
+
+---
+## Project Description
+AI-Powered Financial Health Assessment Platform for SMEs
+
+Small and Medium Enterprises often struggle to understand their financial health,
+manage cash flow, and assess creditworthiness due to complex financial data.
+
+This project is an AI-powered platform that analyzes SME financial data to
+evaluate financial health, identify risks, assess credit readiness, and
+generate actionable insights. The system calculates key financial metrics
+such as cash flow, liquidity, and debt ratios, and presents results through
+a clean, easy-to-use web interface designed for non-finance business owners.
+---
